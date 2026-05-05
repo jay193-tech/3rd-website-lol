@@ -1,3 +1,4 @@
+console.log("JS is working");
 let body = document.body;
 let noBtn = document.getElementById("noBtn");
 let yesBtn = document.getElementById("yesBtn");
@@ -42,4 +43,4 @@ yesBtn.onclick = function () {
   setTimeout(() => {
     body.classList.remove("flash-green");
   }, 400);
-console.log("JS is connected!");
+
