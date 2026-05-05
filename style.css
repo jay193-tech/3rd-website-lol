@@ -1,0 +1,93 @@
+body {
+  text-align: center;
+  font-family: 'Bangers',cursive;
+  background: linear-gradient(-45deg, #ffdde1, #ee9ca7, #a1c4fd, #c2e9fb);
+  background-size: 400% 400%;
+  animation: gradientMove 10s ease infinite;
+}
+
+.container {
+  margin-top: 50px;
+}
+
+img {
+  width: 250px;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+
+h2 {
+  margin-top: 20px;
+}
+
+.buttons button {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+#yesBtn {
+  background: #4CAF50;
+  color: white;
+  border: none;
+}
+
+#noBtn {
+  background: #ff4d4d;
+  color: white;
+  border: none;
+}
+.container {
+  position: relative;
+}
+
+.sticker {
+  position: absolute;
+  width: 80px;
+  top: 150px;
+  right: 150px;
+}
+.sticker.bounce {
+  animation: bounce 0.6s infinite;
+}
+@keyframes bounce {
+  0% {
+    transform: translateY(0) scale(1);
+  }
+
+  50% {
+    transform: translateY(-15px) scale(1.2);
+  }
+
+  100% {
+    transform: translateY(0) scale(1);
+  }
+}
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.flash-green {
+  animation: flashGreen 0.4s ease;
+}
+
+@keyframes flashGreen {
+  0% {
+    background-color: #ffeef2;
+  }
+  50% {
+    background-color: #7CFF7C;
+  }
+  100% {
+    background-color: #ffeef2;
+  }
+}
